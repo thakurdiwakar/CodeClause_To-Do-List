@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <!-- Bootstrap CDN link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">To-Do List</a>
+    </nav>
+    <div class="container mt-5">
+      <!-- <h1 class="text-center mb-4">To-Do List</h1> -->
+
+
+      <h1 class="text-center">
+        <span style="font-family: 'Dancing Script', cursive; font-size: 5rem; letter-spacing: 0.1em; line-height: 1;">To</span>
+        <span style="font-family: 'Dancing Script', cursive; font-size: 5rem; letter-spacing: -0.05em; line-height: 0.9;">Do</span>
+        <span style="font-family: 'Quicksand', sans-serif; font-size: 2.5rem; letter-spacing: 0.05em; line-height: 1.2;">List</span>
+      </h1>
+      
+      
+      <div class="input-group mb-3">
+        <input id="input" type="text" class="form-control" placeholder="Enter task">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" onclick="addTask()">Add Task</button>
+        </div>
+      </div>
+      <ul id="list" class="list-group"></ul>
+      <button id="clear-button" class="btn btn-danger mb-3" onclick="clearCompleted()" disabled>Clear Completed</button>
+      <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+          <p>Made by <a href="https://thakurdiwakar.github.io" class="text-white font-weight-bold">Diwakar</a></p>
+        </div>
+      </footer>
+      
+    <!-- Bootstrap CDN script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
